@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "playwright install",
-    "test": "playwright test",
-    "ci": "./node_modules/bin/playwright install && ./node_modules/bin/playwright test"
+    "test": "playwright test"
   },
   "repository": {
     "type": "git",

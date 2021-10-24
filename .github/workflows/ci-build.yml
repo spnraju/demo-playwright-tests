@@ -18,4 +18,5 @@ jobs:
         with:
           node-version: 14.x
       - run: npm install
-      - run: npm ci
+      - run: npm run setup
+      - run: npm run test
