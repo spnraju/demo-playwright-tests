@@ -1,0 +1,28 @@
+{
+  "name": "demo-playwright-tests",
+  "version": "1.0.0",
+  "description": "sample e2e tests using playwright",
+  "main": "index.js",
+  "scripts": {
+    "setup": "playwright install",
+    "test": "playwright test",
+    "ci": "./node_modules/bin/playwright install && ./node_modules/bin/playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spnraju/demo-playwright-tests.git"
+  },
+  "keywords": [
+    "e2e",
+    "playwright"
+  ],
+  "author": "Padmanabha Raju Sagi <padmanabharaju.sagi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spnraju/demo-playwright-tests/issues"
+  },
+  "homepage": "https://github.com/spnraju/demo-playwright-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.16.1"
+  }
+}
