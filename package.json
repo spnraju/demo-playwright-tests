@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "setup": "playwright install",
-    "test": "playwright test"
+    "test": "playwright test",
+    "update": "npx npm-check-updates --upgrade && npm install && npm audit fix"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,6 @@
   },
   "homepage": "https://github.com/spnraju/demo-playwright-tests#readme",
   "devDependencies": {
-    "@playwright/test": "^1.16.1"
+    "@playwright/test": "^1.16.3"
   }
 }
