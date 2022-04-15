@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/spnraju/demo-playwright-tests#readme",
   "devDependencies": {
-    "@playwright/test": "^1.20.2"
+    "@playwright/test": "^1.21.0"
   }
 }
