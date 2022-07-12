@@ -20,3 +20,6 @@ jobs:
       - run: npm install
       - run: npm run setup
       - run: npm run test
+        env:
+          STANDARD: ${{ secrets.STANDARD }}
+          PASSWORD: ${{ secrets.PASSWORD }}

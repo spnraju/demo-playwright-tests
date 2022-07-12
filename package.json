@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "setup": "playwright install",
-    "test": "playwright test",
+    "test": "playwright test --config=config/base.config.js",
+    "lint": "eslint --ext .js . --fix",
+    "prettier": "prettier **/*.js --write",
     "update": "npx npm-check-updates --upgrade && npm install && npm audit fix"
   },
   "repository": {
@@ -23,6 +25,13 @@
   },
   "homepage": "https://github.com/spnraju/demo-playwright-tests#readme",
   "devDependencies": {
-    "@playwright/test": "^1.23.2"
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/register": "^7.18.6",
+    "@playwright/test": "^1.23.2",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
   }
 }

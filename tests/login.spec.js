@@ -1,11 +1,10 @@
-const { test, expect } = require('@playwright/test');
+import { test } from '@playwright/test';
+import { Login } from '../pages';
 
 test.describe('Login', async () => {
-  const URL = 'https://www.saucedemo.com/';
-
   test('validate title', async ({ page }) => {
-    await page.goto(URL);
-    const logo = page.locator('.login_logo');
-    await expect(logo).toBeVisible();
+    const login = new Login(page);
+    await login.open();
+    await login.login(process.env.STANDARD, process.env.PASSWORD);
   });
 });
