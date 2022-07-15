@@ -3,6 +3,7 @@ name: update-deps
 on:
   schedule:
     - cron: "0 23 * * 5"
+  workflow_dispatch:
 
 jobs:
   update-dependencies:
@@ -22,7 +23,7 @@ jobs:
       - name: Set current date
         run: echo "MY_DATE=$(date +%Y-%m-%d)" >> $GITHUB_ENV
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@master
+        uses: peter-evans/create-pull-request@main
         with:
           commit-message: update dependencies - ${{ env.MY_DATE }}
           branch: update-dependencies
