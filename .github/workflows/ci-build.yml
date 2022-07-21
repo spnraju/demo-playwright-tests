@@ -27,3 +27,10 @@ jobs:
         env:
           STANDARD: ${{ secrets.STANDARD }}
           PASSWORD: ${{ secrets.PASSWORD }}
+      - name: reports
+        uses: dorny/test-reporter@main
+        if: success() || failure()
+        with:
+          name: Json reports
+          reporter: 'mocha-json'
+          path: 'output/*.json'

@@ -7,6 +7,7 @@ require('dotenv').config();
 const config = {
   testDir: '../tests',
   forbidOnly: !!process.env.CI,
+  reporter: [ ['json', { outputFile: 'output/results.json' }] ],
   retries: process.env.CI ? 2 : 0,
   use: {
     baseURL: 'https://www.saucedemo.com',
