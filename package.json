@@ -28,13 +28,13 @@
   },
   "homepage": "https://github.com/spnraju/demo-playwright-tests#readme",
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/preset-env": "^7.20.2",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
     "@babel/register": "^7.21.0",
-    "@playwright/test": "^1.31.1",
+    "@playwright/test": "^1.33.0",
     "dotenv": "^16.0.3",
-    "eslint": "^8.34.0",
-    "eslint-config-prettier": "^8.6.0",
-    "prettier": "^2.8.4"
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8"
   }
 }
