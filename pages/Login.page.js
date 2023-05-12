@@ -1,7 +1,7 @@
 const IPT_USERNAME = '#user-name';
 const IPT_PASSWORD = '#password';
 const BTN_LOGIN = '#login-button';
-const LOGO_SAUCE = '.bot_column';
+const LOGO_SAUCE = '.login_logo';
 
 export class Login {
   constructor(page) {
