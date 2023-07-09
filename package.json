@@ -11,7 +11,7 @@
     "test:webkit":"npm run test -- --project=webkit",
     "lint": "eslint --ext .js . --fix",
     "prettier": "prettier **/*.js --write",
-    "update": "npx npm-check-updates --upgrade && npm install && npm audit fix"
+    "update": "npm update --save"
   },
   "repository": {
     "type": "git",

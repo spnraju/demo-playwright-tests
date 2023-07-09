@@ -1,4 +1,4 @@
-name: update-deps
+name: Dependencies
 
 on:
   schedule:
@@ -7,29 +7,4 @@ on:
 
 jobs:
   update-dependencies:
-    name: update dependencies
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Setup nodejs
-        uses: actions/setup-node@master
-        with:
-          node-version: 16
-      - name: Install dependencies
-        run: npm install
-      - name: Update dependencies
-        run: npm run update
-      - name: Set current date
-        run: echo "MY_DATE=$(date +%Y-%m-%d)" >> $GITHUB_ENV
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@main
-        with:
-          commit-message: update dependencies - ${{ env.MY_DATE }}
-          branch: update-dependencies
-          delete-branch: true
-          base: main
-          title: update dependencies
-          body: update dependencies
-          labels: dependencies
-          reviewers: spnraju
+    uses: spnraju/reusable-workflows/.github/workflows/update-deps.yml@main
