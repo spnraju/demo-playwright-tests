@@ -6,9 +6,9 @@
   "scripts": {
     "setup": "playwright install",
     "test": "playwright test --config=config/base.config.js",
-    "test:chrome":"npm run test -- --project=chromium",
-    "test:firefox":"npm run test -- --project=firefox",
-    "test:webkit":"npm run test -- --project=webkit",
+    "test:chrome": "npm run test -- --project=chromium",
+    "test:firefox": "npm run test -- --project=firefox",
+    "test:webkit": "npm run test -- --project=webkit",
     "lint": "eslint --ext .js . --fix",
     "prettier": "prettier **/*.js --write",
     "update": "npm update --save"
@@ -28,12 +28,12 @@
   },
   "homepage": "https://github.com/spnraju/demo-playwright-tests#readme",
   "devDependencies": {
-    "@babel/core": "^7.22.5",
-    "@babel/preset-env": "^7.22.5",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
     "@babel/register": "^7.22.5",
-    "@playwright/test": "^1.35.1",
-    "dotenv": "^16.3.0",
-    "eslint": "^8.43.0",
+    "@playwright/test": "^1.36.1",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "prettier": "^2.8.8"
   }
