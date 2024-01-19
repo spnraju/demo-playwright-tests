@@ -29,10 +29,10 @@
   "homepage": "https://github.com/spnraju/demo-playwright-tests#readme",
   "devDependencies": {
     "@babel/core": "^7.23.7",
-    "@babel/preset-env": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
     "@babel/register": "^7.23.7",
-    "@playwright/test": "^1.40.1",
-    "dotenv": "^16.3.1",
+    "@playwright/test": "^1.41.1",
+    "dotenv": "^16.3.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^8.10.0",
     "prettier": "^2.8.8"
