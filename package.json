@@ -6,12 +6,12 @@
   "scripts": {
     "setup": "playwright install",
     "test": "playwright test --config=config/base.config.js",
-    "test:chrome": "npm run test -- --project=chromium",
-    "test:firefox": "npm run test -- --project=firefox",
-    "test:webkit": "npm run test -- --project=webkit",
+    "test:chrome": "yarn run test -- --project=chromium",
+    "test:firefox": "yarn run test -- --project=firefox",
+    "test:webkit": "yarn run test -- --project=webkit",
     "lint": "eslint --ext .js . --fix",
     "prettier": "prettier **/*.js --write",
-    "update": "npm update --save"
+    "update": "yarn up '**'"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
     "@playwright/test": "^1.42.1",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
-    "eslint-config-prettier": "^8.10.0",
-    "prettier": "^2.8.8"
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5"
   }
 }
