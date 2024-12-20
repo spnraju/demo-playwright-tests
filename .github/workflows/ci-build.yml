@@ -10,7 +10,7 @@ on:
 
 jobs:
   playwright:
-    name: Playwright tests on ${{ matrix.browser }}
+    name: Tests on ${{ matrix.browser }}
     strategy:
       fail-fast: true
       matrix:

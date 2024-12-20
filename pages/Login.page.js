@@ -9,7 +9,7 @@ export class Login {
   }
 
   async open() {
-    await this.page.goto('/', { waitUntil: 'networkidle', timeout: 3000 });
+    await this.page.goto('/', { waitUntil: 'networkidle', timeout: 5000 });
     await this.page.waitForSelector(LOGO_SAUCE, 'attached', true);
   }
 
