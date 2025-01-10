@@ -33,7 +33,7 @@
     "@babel/register": "^7.25.9",
     "@playwright/test": "^1.49.1",
     "dotenv": "^16.4.7",
-    "eslint": "^9.17.0",
+    "eslint": "^9.18.0",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.4.2"
   }
